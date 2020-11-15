@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 /**
- *
+ * This class is the GUI Window
  * @author Samu
  */
 public class ChatGUI extends javax.swing.JFrame
@@ -25,7 +25,7 @@ public class ChatGUI extends javax.swing.JFrame
     }
     
     /**
-     * Initialize ChatGUI
+     * Initialize ChatGUI and start a client
      */
     public ChatGUI()
     {

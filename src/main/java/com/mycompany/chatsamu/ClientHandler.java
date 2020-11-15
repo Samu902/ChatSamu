@@ -150,6 +150,7 @@ public class ClientHandler extends Thread
     /**
      * Send a message to other client
      * @param msg the message to send
+     * @param nickname client nickname
      * @throws IOException cannot write to stream
      */
     public void sendToOtherClient(Message msg, String nickname) throws IOException
