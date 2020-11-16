@@ -108,7 +108,7 @@ public class ClientHandler extends Thread
                         UserListMessage umsg2 = new UserListMessage(nicknamesFromClientHandlers(true));
                         sendToAllOtherClients(umsg2);
                         close();
-                        break;
+                        return;
                     default:
                         break;
                 }
@@ -207,7 +207,8 @@ public class ClientHandler extends Thread
             System.out.println("Client handler termina elaborazione");
             allClients.remove(this);
             //FONTE DI OGNI MALE - chiuderebbe il data socket, ma fa crashare tutti i client e il server
-//            client.close();
+            //EDIT: FUNZIONA!!!
+            client.close();
         } 
         catch (Exception e)
         {
